@@ -2,6 +2,7 @@
 
 var amqp = require('amqplib');
 
+
 amqp.connect('amqp://localhost').then(function(conn) {
     process.once('SIGINT', function() { conn.close(); });
     return conn.createChannel().then(function(ch) {

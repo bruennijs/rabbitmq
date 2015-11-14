@@ -3,7 +3,7 @@
 var amqp = require('amqplib');
 
 amqp.connect('amqp://rmqlink').then(function(conn) {
-    console.log("OKI DO");
+    //process.stdout.write("OKI DO");
     process.once('SIGINT', function() { conn.close(); });
     return conn.createChannel().then(function(ch) {
 
