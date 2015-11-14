@@ -1,0 +1,14 @@
+{
+  "name": "rabbitmq.play",
+  "version": "1.0.0",
+  "description": "for playing with rabbitmq",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver Brüntje",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.4.0"
+  }
+}
