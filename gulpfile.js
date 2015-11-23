@@ -8,10 +8,11 @@ gulp.task('ts', function() {
             "module": "commonjs",
             "target": "es5",
             "noImplicitAny": false,
-            "removeComments": true
+            "removeComments": true,
+            "noResolve": false
         }));
 
-    return tsResult.js.pipe(gulp.dest('release/js'));
+    return tsResult.js.pipe(gulp.dest('.'));
 
     //return merge([
     //    tsResult.dts.pipe(gulp.dest('release/definitions')),
